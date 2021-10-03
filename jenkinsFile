@@ -2,20 +2,32 @@ pipeline {
     agent any
     stages {
         stage('git repo & clean') {
-            sleep 10
-            echo 'hello 1'
-        }
+          steps{
+              sleep 10
+              echo 'hello 1'
+              }
+          }
+        
         stage('install') {
-            sleep 10
-            echo 'hello 2'
+           steps{
+              sleep 10
+              echo 'hello 2'
+              }
+          }
         }
         stage('test') {
-            sleep 10
-            echo 'hello 3'
+           steps{
+              sleep 10
+              echo 'hello 3'
+              }
+          }
         }
         stage('package') {
-           sleep 10
-           echo 'hello 4'
+            steps{
+              sleep 10
+              echo 'hello 4'
+              }
+          }
         }
     }
 }
