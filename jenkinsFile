@@ -1,1 +1,27 @@
-
+pipeline {
+    agent any
+    stages {
+        stage('git repo & clean') {
+            steps {
+               bat "rmdir  /s /q inetum_integration_project"
+                bat "git clone https://github.com/nouramine878/inetum_integration_project.git"
+                bat "mvn clean -f inetum_integration_project"
+            }
+        }
+        stage('install') {
+            steps {
+                bat "mvn install -f inetum_integration_project"
+            }
+        }
+        stage('test') {
+            steps {
+                bat "mvn test -f inetum_integration_project"
+            }
+        }
+        stage('package') {
+            steps {
+                bat "mvn package -f inetum_integration_project"
+            }
+        }
+    }
+}
