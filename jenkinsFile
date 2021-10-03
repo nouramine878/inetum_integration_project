@@ -1,1 +1,21 @@
-
+pipeline {
+    agent any
+    stages {
+        stage('git repo & clean') {
+            sleep 10
+            echo 'hello pipeline i'am in the first stage'
+        }
+        stage('install') {
+            sleep 10
+            echo 'hello pipeline i'am in the second stage'
+        }
+        stage('test') {
+            sleep 10
+            echo 'hello pipeline i'am in the third stage'
+        }
+        stage('package') {
+           sleep 10
+           echo 'hello pipeline i'am in the fourth stage'
+        }
+    }
+}
