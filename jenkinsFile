@@ -28,6 +28,6 @@ pipeline {
               echo 'hello 4'
               }
           }
-        }
+        
     }
 }
