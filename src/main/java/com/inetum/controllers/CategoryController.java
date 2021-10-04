@@ -30,6 +30,7 @@ public class CategoryController {
     //other some comment
 
     //try other method
+    //haya emchi bjeh weldik
     @PostMapping(path = "/add-new-category")
     public  Category addNewCategry (@RequestBody CategoryDto categoryDto){
         Category category = modelMapper.map(categoryDto,Category.class);
