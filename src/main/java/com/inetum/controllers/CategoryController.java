@@ -28,6 +28,8 @@ public class CategoryController {
     //other comment
     ///commit for testing triggers automatically
     //other some comment
+
+    //try other method
     @PostMapping(path = "/add-new-category")
     public  Category addNewCategry (@RequestBody CategoryDto categoryDto){
         Category category = modelMapper.map(categoryDto,Category.class);
