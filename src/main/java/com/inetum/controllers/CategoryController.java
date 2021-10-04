@@ -24,7 +24,7 @@ public class CategoryController {
         this.categoryService = categoryService;
         this.modelMapper = modelMapper;
     }
- // to start pipeline automatically without launch it manually
+ // to start pipeline automatically without launch it manually again
     @PostMapping(path = "/add-new-category")
     public  Category addNewCategry (@RequestBody CategoryDto categoryDto){
         Category category = modelMapper.map(categoryDto,Category.class);
