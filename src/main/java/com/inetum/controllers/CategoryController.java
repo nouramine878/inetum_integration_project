@@ -26,6 +26,8 @@ public class CategoryController {
     }
  // to start pipeline automatically without launch it manually again
     // this comment for launch both chekout and building maven project
+
+    //we will try to build again
     @PostMapping(path = "/add-new-category")
     public  Category addNewCategry (@RequestBody CategoryDto categoryDto){
         Category category = modelMapper.map(categoryDto,Category.class);
