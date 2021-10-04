@@ -24,12 +24,7 @@ public class CategoryController {
         this.categoryService = categoryService;
         this.modelMapper = modelMapper;
     }
- // to start pipeline automatically without launch it manually again
-    // this comment for launch both chekout and building maven project
-
-
-
-    //we are trying now to analyse project with sonarqube in the pipeline bara aya
+//add comment just to trigger pipeline and run it automaticallly
     @PostMapping(path = "/add-new-category")
     public  Category addNewCategry (@RequestBody CategoryDto categoryDto){
         Category category = modelMapper.map(categoryDto,Category.class);
