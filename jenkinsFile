@@ -2,9 +2,7 @@ pipeline {
 
 
     agent any
-    triggers {
-            pollSCM '* * * * *'
-        }
+
     stages {
         stage('git repo & clean') {
             steps {
