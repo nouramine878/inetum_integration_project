@@ -1,4 +1,8 @@
 pipeline {
+triggers {
+  pollSCM 'http://localhost:5432/'
+}
+
     agent any
     stages {
         stage('git repo & clean') {
