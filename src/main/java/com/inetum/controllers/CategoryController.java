@@ -28,6 +28,8 @@ public class CategoryController {
     // this comment for launch both chekout and building maven project
 
     //we will try to build again
+
+    //we are trying now to analyse project with sonarqube in the pipeline
     @PostMapping(path = "/add-new-category")
     public  Category addNewCategry (@RequestBody CategoryDto categoryDto){
         Category category = modelMapper.map(categoryDto,Category.class);
