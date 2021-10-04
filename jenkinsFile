@@ -28,6 +28,7 @@ pipeline {
             steps {
               sleep 10
               echo 'hello 4'
+              echo 'bbb'
             }
         }
     }
