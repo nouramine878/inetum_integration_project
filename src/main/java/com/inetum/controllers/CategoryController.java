@@ -25,12 +25,7 @@ public class CategoryController {
         this.modelMapper = modelMapper;
     }
   //juste some comment to test automaticaly build in the jenkins pippeline
-    //other comment
-    ///commit for testing triggers automatically
-    //other some comment
 
-    //try other method
-    //haya emchi bjeh weldik
     @PostMapping(path = "/add-new-category")
     public  Category addNewCategry (@RequestBody CategoryDto categoryDto){
         Category category = modelMapper.map(categoryDto,Category.class);
