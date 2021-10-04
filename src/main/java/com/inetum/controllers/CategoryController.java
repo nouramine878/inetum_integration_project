@@ -29,7 +29,7 @@ public class CategoryController {
 
 
 
-    //we are trying now to analyse project with sonarqube in the pipeline
+    //we are trying now to analyse project with sonarqube in the pipeline bara aya
     @PostMapping(path = "/add-new-category")
     public  Category addNewCategry (@RequestBody CategoryDto categoryDto){
         Category category = modelMapper.map(categoryDto,Category.class);
