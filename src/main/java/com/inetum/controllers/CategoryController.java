@@ -27,7 +27,7 @@ public class CategoryController {
  // to start pipeline automatically without launch it manually again
     // this comment for launch both chekout and building maven project
 
-    //we will try to build again
+
 
     //we are trying now to analyse project with sonarqube in the pipeline
     @PostMapping(path = "/add-new-category")
