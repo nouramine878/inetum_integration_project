@@ -25,11 +25,5 @@ pipeline {
               echo 'hello 4'
             }
         }
-        stage('package') {
-                    steps {
-                      sleep 10
-                      echo 'hello 4'
-                    }
-                }
     }
 }
