@@ -24,7 +24,7 @@ public class CategoryController {
         this.categoryService = categoryService;
         this.modelMapper = modelMapper;
     }
-//add comment just to trigger pipeline and run it automaticallly
+    //this is the last build
     @PostMapping(path = "/add-new-category")
     public  Category addNewCategry (@RequestBody CategoryDto categoryDto){
         Category category = modelMapper.map(categoryDto,Category.class);
