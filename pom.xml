@@ -106,6 +106,6 @@
 				</configuration>
 			</plugin>
 		</plugins>
+		<finalName>inetum_integration_docker</finalName>
 	</build>
-
 </project>
